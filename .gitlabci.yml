@@ -1,0 +1,12 @@
+echo_develop:
+  script: echo "I was triggered on develop"
+  only:
+    - /^develop$/
+
+echo_master:
+  script: echo "I was triggered on master"
+  only:
+    - master
+    
+echo_echo:
+  script: echo "Im always triggered"
